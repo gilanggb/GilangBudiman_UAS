@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mobile"
+    android:layout_marginLeft="0dp"
+    android:layout_marginRight="0dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="monospace"
+        android:text="Gilang Budiman \n191011401335 "
+        android:textColor="#FFFF00"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText,SpUsage" />
+
+    <LinearLayout
+        android:id="@+id/layout_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_maps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Maps"
+            android:textColor="@color/colorSecondaryVariant"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/btn_shared"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Shared"
+            android:textColor="@color/colorPrimaryDark"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/btn_network"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Network"
+            android:textColor="@color/colorAccent"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_2"
+        android:layout_below="@+id/layout_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_asyntask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Asyntask"
+            android:textColor="@color/colorSecondary"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/btn_sms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="SMS"
+            android:textColor="@color/colorPrimary"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/btn_local"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Local DB"
+            android:textColor="@color/colorOnSecondary"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,2 @@
+rootProject.name='GilangBudiman_UAS'
+include ':app'
